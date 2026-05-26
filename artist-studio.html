@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Artist Studio | AJ Picture Framing</title>
+    <style>
+        :root {
+            --primary: #1a2a3a;
+            --accent: #c5a059;
+            --text: #333333;
+            --light: #f8f9fa;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text);
+            line-height: 1.6;
+            background-color: var(--light);
+        }
+        nav {
+            background-color: #111d29;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid var(--accent);
+        }
+        nav .logo {
+            color: white;
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        nav .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 500;
+        }
+        nav .nav-links a:hover, nav .nav-links a.active {
+            color: var(--accent);
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+            border-bottom: 4px solid var(--accent);
+        }
+        header h1 { margin: 0; font-size: 2.8rem; }
+        header p { margin: 0.5rem 0 0; font-size: 1.2rem; color: #b0c4de; }
+        .container {
+            max-width: 900px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+        .studio-intro {
+            font-size: 1.15rem;
+            margin-bottom: 3rem;
+            border-left: 4px solid var(--accent);
+            padding-left: 1.5rem;
+        }
+        .services-list {
+            margin: 3rem 0;
+        }
+        .service-item {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .service-item h3 {
+            margin-top: 0;
+            color: var(--primary);
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .back-link:hover { color: var(--accent); }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 5rem;
+            color: #777;
+            font-size: 0.9rem;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">AJ Picture Framing</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="artist-studio.html" class="active">Artist Studio</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>The Artist Studio</h1>
+        <p>Partnering with Creators, Galleries, and Photographers</p>
+    </header>
+
+    <div class="container">
+        <div class="studio-intro">
+            <p>We understand that framing for fine artists requires a delicate balance of beautiful aesthetics, strict archival protection, and volume efficiency. The Artist Studio is our dedicated service tier built to support local creators preparing for exhibitions, gallery openings, and print sales.</p>
+        </div>
+
+        <h2>Specialized Creator Services</h2>
+        <div class="services-list">
+            <div class="service-item">
+                <h3>Exhibition & Gallery Presentation</h3>
+                <p>Cohesive, clean framing configurations designed to let the artwork shine without distraction. Perfect for solo or group gallery exhibitions.</p>
+            </div>
+            <div class="service-item">
+                <h3>Archival & Conservation Mats</h3>
+                <p>100% acid-free matting solutions that safely shield drawings, watercolors, and limited-edition photography prints from degradation over time.</p>
+            </div>
+            <div class="service-item " >
+                <h3>Volume Contracting</h3>
+                <p>Streamlined options for professionals requiring consistent multi-piece orders or uniform framing setups for production collections.</p>
+            </div>
+        </div>
+
+        <p><a href="index.html" class="back-link">&larr; Return to Home Page</a></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 AJ Picture Framing. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
