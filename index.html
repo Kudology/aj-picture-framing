@@ -38,91 +38,122 @@
             text-decoration: none;
             margin-left: 1.5rem;
             font-weight: 500;
-            transition: color 0.3s;
         }
         nav .nav-links a:hover, nav .nav-links a.active {
             color: var(--accent);
         }
         header {
-            background-color: var(--primary);
+            background-color: #2c3e50;
             color: white;
             text-align: center;
             padding: 5rem 2rem;
+            border-bottom: 5px solid var(--accent);
         }
-        header h1 { margin: 0; font-size: 3rem; }
-        header p { margin: 1rem 0 0; font-size: 1.2rem; color: #b0c4de; }
+        header h1 {
+            margin: 0;
+            font-size: 3.2rem;
+        }
+        header p {
+            margin: 0.5rem 0 0;
+            font-size: 1.4rem;
+            color: #b0c4de;
+            font-style: italic;
+        }
         .container {
-            max-width: 1000px;
-            margin: 3rem auto;
+            max-width: 1100px;
+            margin: 4rem auto;
             padding: 0 2rem;
         }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-        .card {
-            background: white;
-            padding: 2rem 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            border-top: 4px solid var(--accent);
+        .intro-text {
             text-align: center;
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 4rem;
+            color: #555;
         }
-        .card h3 { margin-top: 0; color: var(--primary); }
-        .card p { color: #555; font-size: 0.95rem; }
-        .image-placeholder {
-            background: #e9ecef;
-            height: 180px;
-            margin-bottom: 1.5rem;
-            border-radius: 6px;
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 5rem;
+        }
+        .service-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--accent);
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color: #6c757d;
-            font-weight: 600;
-            font-size: 0.95rem;
-            border: 2px dashed #dee2e6;
-            padding: 0 1rem;
         }
-        .image-placeholder span {
-            font-size: 0.8rem;
-            font-weight: normal;
-            color: #95a5a6;
-            margin-top: 0.25rem;
+        .card-image {
+            height: 220px;
+            overflow: hidden;
         }
-        .cta-section {
-            background-color: var(--primary);
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 2rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .card-content h2 {
+            margin-top: 0;
+            color: var(--primary);
+            font-size: 1.5rem;
+        }
+        .card-content p {
+            color: #666;
+            flex-grow: 1;
+        }
+        .explore-btn {
+            display: inline-block;
+            margin-top: 1rem;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .explore-btn:hover {
+            color: var(--primary);
+        }
+        .info-section {
+            background: #111d29;
             color: white;
-            padding: 3rem;
+            padding: 4rem 2rem;
             border-radius: 8px;
             text-align: center;
-            margin-top: 4rem;
+            border-bottom: 4px solid var(--accent);
         }
-        .cta-section h2 { color: var(--accent); margin-top: 0; }
-        .cta-section a { color: white; font-weight: bold; text-decoration: none; border-bottom: 2px solid var(--accent); }
-        .contact-details {
-            margin-top: 1.5rem;
-            font-size: 1.15rem;
-            line-height: 1.8;
+        .info-section h2 {
+            color: var(--accent);
+            margin-top: 0;
         }
-        .language-badge {
-            display: inline-block;
-            background-color: #223e5a;
-            color: #e2b765;
-            padding: 0.3rem 1rem;
-            border-radius: 20px;
-            font-weight: bold;
-            font-size: 0.95rem;
-            margin-top: 1rem;
-            border: 1px solid var(--accent);
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .info-item h4 {
+            color: #b0c4de;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        .info-item p {
+            margin: 0;
+            color: #e0e0e0;
         }
         footer {
             text-align: center;
             padding: 2rem;
-            margin-top: 4rem;
+            margin-top: 5rem;
             color: #777;
             font-size: 0.9rem;
             border-top: 1px solid #ddd;
@@ -145,49 +176,58 @@
     </header>
 
     <div class="container">
-        <section style="text-align: center; margin-bottom: 4rem;">
-            <h2>Preserving Your Memories, Fine Art, & Collectibles</h2>
-            <p style="font-size: 1.1rem; max-width: 700px; margin: 0 auto; color: #555;">Based in Chalfont, Pennsylvania, our workshop provides museum-quality custom framing solutions. We treat every project with meticulous attention to structural integrity, archival safety, and exceptional design layout.</p>
-        </section>
+        <h2>Preserving Your Memories, Fine Art, & Collectibles</h2>
+        <p class="intro-text">Based in Chalfont, Pennsylvania, our workshop provides museum-quality custom framing solutions. We treat every project with meticulous attention to structural integrity, archival safety, and exceptional design layout.</p>
 
-        <div class="grid">
-            <div class="card">
-                <div class="image-placeholder">
-                    Custom Frame Design
-                    <span>[ Photo Coming Soon ]</span>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=500&q=80" alt="Custom Frame Design Samples">
                 </div>
-                <h3>Custom Frame Design</h3>
-                <p>Archival-grade mat boards, custom-milled wood frames, and UV-protective glass selections configured explicitly to complement and preserve your piece.</p>
+                <div class="card-content">
+                    <h2>Custom Frame Design</h2>
+                    <p>Archival-grade mat boards, custom-milled wood frames, and UV-protective glass selections configured explicitly to complement and preserve your piece.</p>
+                </div>
             </div>
-            <div class="card">
-                <div class="image-placeholder">
-                    The Artist Gallery
-                    <span>[ Photo Coming Soon ]</span>
+
+            <div class="service-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1545987796-200677ee1011?auto=format&fit=crop&w=500&q=80" alt="Art Exhibition Gallery">
                 </div>
-                <h3>The Artist Gallery</h3>
-                <p>Specialized uniform presentation styles, contract-tier pricing, and high-efficiency archival matting built specifically for Bucks County fine artists and photographers. <a href="artist-gallery.html" style="color: var(--accent); text-decoration: none; font-weight: bold;"><br>Explore Gallery Services &rarr;</a></p>
+                <div class="card-content">
+                    <h2>The Artist Gallery</h2>
+                    <p>Specialized uniform presentation styles, contract-tier pricing, and high-efficiency archival matting built specifically for Bucks County fine artists and photographers.</p>
+                    <a href="artist-gallery.html" class="explore-btn">Explore Gallery Services &rarr;</a>
+                </div>
             </div>
-            <div class="card">
-                <div class="image-placeholder">
-                    Diplomas & Memorabilia
-                    <span>[ Photo Coming Soon ]</span>
+
+            <div class="service-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1581337204873-ef3678791539?auto=format&fit=crop&w=500&q=80" alt="Shadowbox Display Case">
                 </div>
-                <h3>Memorabilia & Shadowboxes</h3>
-                <p>Precision execution for university diplomas, family documents, sports jerseys, military medals, structural three-dimensional objects, and canvas stretching.</p>
+                <div class="card-content">
+                    <h2>Memorabilia & Shadowboxes</h2>
+                    <p>Precision execution for university diplomas, family documents, sports jerseys, military medals, structural three-dimensional objects, and canvas stretching.</p>
+                </div>
             </div>
         </div>
 
-        <section class="cta-section">
+        <div class="info-section">
             <h2>Visit the Chalfont Workshop</h2>
             <p>Our workshop operates by appointment to give your artwork undivided technical attention. Contact us today to schedule a design consultation.</p>
             
-            <div class="contact-details">
-                <p><strong>Address:</strong> 31 Oak Avenue, Suite 160, Chalfont, PA 18914</p>
-                <p><strong>Phone:</strong> <a href="tel:+12674547529">(267) 454-7529</a></p>
-                <p><strong>Email:</strong> <a href="mailto:info@ajpictureframing.com">info@ajpictureframing.com</a></p>
-                <div class="language-badge">Hablamos Español — Se Atiende por Cita</div>
+            <div class="info-grid">
+                <div class="info-item">
+                    <h4>Address</h4>
+                    <p>31 Oak Avenue, Suite 160<br>Chalfont, PA 18914</p>
+                </div>
+                <div class="info-item">
+                    <h4>Contact</h4>
+                    <p>Phone: (267) 454-7529<br>Email: info@ajpictureframing.com</p>
+                </div>
             </div>
-        </section>
+            <p style="margin-top: 2.5rem; font-style: italic; color: #accent;">Hablamos Español — Se Atiende por Cita</p>
+        </div>
     </div>
 
     <footer>
