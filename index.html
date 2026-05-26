@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AJ Picture Framing | Custom Framing & Preservation</title>
+    <title>AJ Picture Framing | Custom Framing Chalfont PA</title>
     <style>
         :root {
             --primary: #1a2a3a;
@@ -49,15 +49,8 @@
             text-align: center;
             padding: 5rem 2rem;
         }
-        header h1 {
-            margin: 0;
-            font-size: 3rem;
-        }
-        header p {
-            margin: 1rem 0 0;
-            font-size: 1.2rem;
-            color: #b0c4de;
-        }
+        header h1 { margin: 0; font-size: 3rem; }
+        header p { margin: 1rem 0 0; font-size: 1.2rem; color: #b0c4de; }
         .container {
             max-width: 1000px;
             margin: 3rem auto;
@@ -75,10 +68,20 @@
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
             border-top: 4px solid var(--accent);
+            text-align: center;
         }
-        .card h3 {
-            margin-top: 0;
-            color: var(--primary);
+        .card h3 { margin-top: 0; color: var(--primary); }
+        .image-placeholder {
+            background: #e9ecef;
+            height: 180px;
+            margin-bottom: 1.5rem;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6c757d;
+            font-weight: 500;
+            border: 2px dashed #dee2e6;
         }
         .cta-section {
             background-color: var(--primary);
@@ -90,6 +93,22 @@
         }
         .cta-section h2 { color: var(--accent); margin-top: 0; }
         .cta-section a { color: white; font-weight: bold; text-decoration: none; border-bottom: 2px solid var(--accent); }
+        .contact-details {
+            margin-top: 1.5rem;
+            font-size: 1.15rem;
+            line-height: 1.8;
+        }
+        .language-badge {
+            display: inline-block;
+            background-color: #223e5a;
+            color: #e2b765;
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.95rem;
+            margin-top: 1rem;
+            border: 1px solid var(--accent);
+        }
         footer {
             text-align: center;
             padding: 2rem;
@@ -112,34 +131,43 @@
 
     <header>
         <h1>Custom Framing Excellence</h1>
-        <p>Premium Materials • Expert Preservation • Tailored Craftsmanship</p>
+        <p>Premium Materials • Expert Preservation • Bucks County Workshop</p>
     </header>
 
     <div class="container">
-        <section style="text-align: center;">
-            <h2>Preserving Your Memories & Fine Art</h2>
-            <p style="font-size: 1.1rem; max-width: 700px; margin: 0 auto;">From family heirlooms and sports memorabilia to local gallery fine art prints, we provide precision framing solutions designed to protect and showcase what matters most to you.</p>
+        <section style="text-align: center; margin-bottom: 4rem;">
+            <h2>Preserving Your Memories, Fine Art, & Collectibles</h2>
+            <p style="font-size: 1.1rem; max-width: 700px; margin: 0 auto; color: #555;">Based in Chalfont, Pennsylvania, our workshop provides museum-quality custom framing solutions. We treat every project with meticulous attention to structural integrity, archival safety, and exceptional design layout.</p>
         </section>
 
         <div class="grid">
             <div class="card">
+                <div class="image-placeholder">Custom Frame Photo Here</div>
                 <h3>Custom Frame Design</h3>
-                <p>Choose from archival mats, premium wood styles, and museum-quality UV protection glass tailored perfectly for your space.</p>
+                <p>Archival-grade mat boards, custom-milled wood frames, and UV-protective glass selections configured explicitly to complement and preserve your piece.</p>
             </div>
             <div class="card">
+                <div class="image-placeholder">Artist Studio Photo Here</div>
                 <h3>The Artist Studio</h3>
-                <p>A specialized suite of services dedicated specifically to fine artists, photographers, and independent creators. <a href="artist-studio.html" style="color: var(--accent); text-decoration: none; font-weight: bold;">Learn More &rarr;</a></p>
+                <p>Specialized uniform presentation styles, contract-tier pricing, and high-efficiency archival matting built specifically for Bucks County fine artists and photographers. <a href="artist-studio.html" style="color: var(--accent); text-decoration: none; font-weight: bold;"><br>Explore Studio Services &rarr;</a></p>
             </div>
             <div class="card">
-                <h3>Memorabilia & Objects</h3>
-                <p>Expertly built shadowboxes for jerseys, medals, structural objects, and delicate canvas stretching services.</p>
+                <div class="image-placeholder">Memorabilia Photo Here</div>
+                <h3>Memorabilia & Shadowboxes</h3>
+                <p>Precision execution for sports jerseys, historical family documents, military medals, structural three-dimensional objects, and professional canvas stretching.</p>
             </div>
         </div>
 
         <section class="cta-section">
-            <h2>Let's Discuss Your Next Framing Project</h2>
-            <p>Our workshop is ready to bring your vision to life. Reach out directly for design options and quotes.</p>
-            <p style="font-size: 1.2rem; margin-top: 1.5rem;">Email: <a href="mailto:info@ajpictureframing.com">info@ajpictureframing.com</a></p>
+            <h2>Visit the Chalfont Workshop</h2>
+            <p>Our workshop operates by appointment to give your artwork undivided technical attention. Contact us today to schedule a design consultation.</p>
+            
+            <div class="contact-details">
+                <p><strong>Address:</strong> 31 Oak Avenue, Suite 160, Chalfont, PA 18914</p>
+                <p><strong>Phone:</strong> <a href="tel:+12674547529">(267) 454-7529</a></p>
+                <p><strong>Email:</strong> <a href="mailto:info@ajpictureframing.com">info@ajpictureframing.com</a></p>
+                <div class="language-badge">Hablamos Español — Se Atiende por Cita</div>
+            </div>
         </section>
     </div>
 
