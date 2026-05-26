@@ -1,1 +1,151 @@
-</h1>AJ Picture Framing Coming Soon<h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJ Picture Framing | Custom Framing & Preservation</title>
+    <style>
+        :root {
+            --primary: #1a2a3a;
+            --accent: #c5a059;
+            --text: #333333;
+            --light: #f8f9fa;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text);
+            line-height: 1.6;
+            background-color: var(--light);
+        }
+        nav {
+            background-color: #111d29;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid var(--accent);
+        }
+        nav .logo {
+            color: white;
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        nav .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav .nav-links a:hover, nav .nav-links a.active {
+            color: var(--accent);
+        }
+        header {
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 5rem 2rem;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+        header p {
+            margin: 1rem 0 0;
+            font-size: 1.2rem;
+            color: #b0c4de;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--accent);
+        }
+        .card h3 {
+            margin-top: 0;
+            color: var(--primary);
+        }
+        .cta-section {
+            background-color: var(--primary);
+            color: white;
+            padding: 3rem;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 4rem;
+        }
+        .cta-section h2 { color: var(--accent); margin-top: 0; }
+        .cta-section a { color: white; font-weight: bold; text-decoration: none; border-bottom: 2px solid var(--accent); }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+            color: #777;
+            font-size: 0.9rem;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">AJ Picture Framing</a>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="artist-studio.html">Artist Studio</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Custom Framing Excellence</h1>
+        <p>Premium Materials • Expert Preservation • Tailored Craftsmanship</p>
+    </header>
+
+    <div class="container">
+        <section style="text-align: center;">
+            <h2>Preserving Your Memories & Fine Art</h2>
+            <p style="font-size: 1.1rem; max-width: 700px; margin: 0 auto;">From family heirlooms and sports memorabilia to local gallery fine art prints, we provide precision framing solutions designed to protect and showcase what matters most to you.</p>
+        </section>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Custom Frame Design</h3>
+                <p>Choose from archival mats, premium wood styles, and museum-quality UV protection glass tailored perfectly for your space.</p>
+            </div>
+            <div class="card">
+                <h3>The Artist Studio</h3>
+                <p>A specialized suite of services dedicated specifically to fine artists, photographers, and independent creators. <a href="artist-studio.html" style="color: var(--accent); text-decoration: none; font-weight: bold;">Learn More &rarr;</a></p>
+            </div>
+            <div class="card">
+                <h3>Memorabilia & Objects</h3>
+                <p>Expertly built shadowboxes for jerseys, medals, structural objects, and delicate canvas stretching services.</p>
+            </div>
+        </div>
+
+        <section class="cta-section">
+            <h2>Let's Discuss Your Next Framing Project</h2>
+            <p>Our workshop is ready to bring your vision to life. Reach out directly for design options and quotes.</p>
+            <p style="font-size: 1.2rem; margin-top: 1.5rem;">Email: <a href="mailto:info@ajpictureframing.com">info@ajpictureframing.com</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 AJ Picture Framing. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
